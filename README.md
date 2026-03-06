@@ -6,7 +6,7 @@ This project showcases a responsive layout, elegant typography, and a clean UI f
 ---
 ## 🌐 Live Demo
 
-👉 https://rushithapalteru.github.io/crust-and-crumb/
+👉 https://rushithapalteru.github.io/FUTURE_FS_03/
 
 ## 🌟 Features
 
@@ -59,3 +59,4 @@ crust-and-crumb
 
 
 **Rushitha**
+
