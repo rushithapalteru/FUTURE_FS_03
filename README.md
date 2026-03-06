@@ -4,6 +4,9 @@ A modern bakery website designed with a warm European aesthetic.
 This project showcases a responsive layout, elegant typography, and a clean UI for an online bakery experience.
 
 ---
+## 🌐 Live Demo
+
+👉 https://rushithapalteru.github.io/crust-and-crumb/
 
 ## 🌟 Features
 
@@ -53,5 +56,6 @@ crust-and-crumb
 ---
 
 ## 📌 Author
+
 
 **Rushitha**
