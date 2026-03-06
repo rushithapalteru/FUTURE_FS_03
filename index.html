@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crust & Crumb</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="logo">Crust & Crumb</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#story">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- 1️⃣ HERO -->
+<section class="hero">
+    <h1>LET'S TASTE PERFECTION</h1>
+    <button onclick="openForm()">ORDER NOW</button>
+    <p class="hero-subtext">Quick & Easy Online Ordering</p>
+</section>
+
+<!-- 2️⃣ DISCOVER OUR STORY -->
+<section id="story" class="story">
+    <div class="story-text">
+        <h2>Discover Our Story</h2>
+        <p>
+            At Crust & Crumb, we bring refined European baking traditions to Vizag.
+            Every loaf, cake, and pastry is crafted with patience and premium ingredients.
+        </p>
+    </div>
+    <img src="about.jpg" alt="Bakery Image">
+</section>
+<section class="story-banner">
+    <img src="alwaysfresh.jpg" alt="Fresh Bread">
+</section>
+
+<!-- 3️⃣ OUR SPECIAL MENU -->
+<section id="menu" class="menu">
+    <h2>Our Special Menu</h2>
+
+    <div class="menu-grid">
+
+    <div class="card" onclick="showItem('Hazelnut Cake','Flour, Cocoa, Hazelnut Cream, Butter, Eggs, Sugar')">
+        <img src="hazelnut.jpg">
+        <h3>Hazelnut Cake</h3>
+        <p>₹450</p>
+    </div>
+
+    <div class="card" onclick="showItem('Sourdough Bread','Organic Flour, Natural Starter, Salt, Water')">
+        <img src="sourdough.jpg">
+        <h3>Sourdough Bread</h3>
+        <p>₹180</p>
+    </div>
+
+    <div class="card" onclick="showItem('Brownie','Dark Chocolate, Butter, Cocoa, Sugar, Eggs')">
+        <img src="brownie.jpg">
+        <h3>Brownie</h3>
+        <p>₹220</p>
+    </div>
+
+    <div class="card" onclick="showItem('Hot Chocolate','Cocoa Powder, Milk, Sugar, Dark Chocolate')">
+        <img src="hotchocolate.jpg">
+        <h3>Hot Chocolate</h3>
+        <p>₹160</p>
+    </div>
+
+    <div class="card" onclick="showItem('Croissant','Flour, Butter, Yeast, Milk, Sugar')">
+        <img src="croissant.jpg">
+        <h3>Croissant</h3>
+        <p>₹140</p>
+    </div>
+
+</div>
+</section>
+
+<!-- 4️⃣ CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Vizag</p>
+    <p>✉ rushithapalteru12@gmail.com</p>
+    <p>📞 +91 9876543210</p>
+</section>
+<!-- ORDER POPUP FORM -->
+<div id="orderForm" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeForm()">&times;</span>
+    <h2>Place Your Order</h2>
+
+    <form>
+  <input type="text" placeholder="Your Name" required>
+  <input type="text" placeholder="Address" required>
+  <input type="tel" placeholder="Contact Number" required>
+
+  <textarea placeholder="What would you like to order?" rows="4" required></textarea>
+
+  <!-- Gift Option -->
+  <div class="gift-option">
+    <label>
+        <input type="checkbox" id="giftCheck" onclick="toggleGift()">
+        <span>This is a Gift 🎁</span>
+    </label>
+</div>
+
+  <!-- Hidden Gift Message Box -->
+  <textarea id="giftMessage"
+            placeholder="Write your gift message here..."
+            rows="3"
+            style="display:none;"></textarea>
+
+  <button type="submit">Submit Order</button>
+</form>
+  </div>
+</div>
+<div id="itemPopup" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeItem()">&times;</span>
+    <h2 id="itemTitle"></h2>
+    <p><strong>Ingredients:</strong></p>
+    <p id="itemIngredients"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
